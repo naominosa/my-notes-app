@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    color: #252525;
 
 }
 .inner-con h1{
@@ -83,7 +84,7 @@
   @media screen and (max-width:600px) {
     .inner-con{
         width: 90%;
-        padding: 2em;
+        padding: 4em;
     }
     .inner-con h1{
         white-space: nowrap;
