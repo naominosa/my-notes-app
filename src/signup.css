@@ -51,6 +51,9 @@
     filter: grayscale(50%);
     filter:blur(50%);
 }
+::placeholder{
+    color: #000;
+}
 .inner-con:hover{
     filter: grayscale(0%);
 }
