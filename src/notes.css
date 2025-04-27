@@ -1,0 +1,194 @@
+.notes-container{
+  font-family: 'Poppins', sans-serif;
+  font-family: "McLaren", cursive;
+
+}
+  header {
+    font-family: 'Poppins', sans-serif;
+    width:100%;
+    background-color: #f5ba13;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    
+  }
+  
+  header h1 {
+    color: #fff;
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+  }
+  .search-icon{
+    border: none;
+    background-color: #f0f0f029;
+    font-size: 16px;
+    padding: 1em;
+
+  }
+  .search-icon:hover{
+    outline: none;
+    background-color: #e0e0e092;
+    border-left: #5a5b02 solid 5px;
+
+  }
+  .text-container{
+    
+    margin-top: 2em;
+    width: 40%;
+    height: 40vh;
+    flex-flow:column wrap ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(15px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #000; 
+    gap: 20px;
+    font-family: "McLaren", cursive;
+
+  }
+   .st{
+    all: unset;
+  }
+ 
+  textarea,.st:focus {
+    outline: none;
+    background-color: #e0e0e092;
+    border-left: hsla(55, 82%, 41%, 0.616) solid 5px;
+
+  }
+  .overall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .add-button{
+
+  position: relative;
+  top: 90%;
+  left: 15%;
+ }
+ .add{
+  
+  background-color: hsl(120, 96%, 33%);
+  border-radius: 15px;
+  width: 5em;
+  padding: 0.3em;
+ }
+  .add:hover{
+  background-color: hsla(120, 100%, 18%, 0.427);
+
+  }
+  .icons{
+    display: flex;
+    gap: 10px;
+  }
+
+  .note {
+    color: wheat;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 20vw;
+    height: 50%;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 32px rgba(172, 9, 9, 0.2);
+    animation: fadeInUp 0.5s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* align-items: center; */
+
+  }
+  .note:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(234, 151, 243, 0.774);
+    border: 1px solid #cd77c8;
+  }
+  
+  .note h1 {
+    font-size: 1.1em;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+  }
+  .note p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  .saved-notes {
+    display: flex;
+    justify-content: center;   /* Horizontally center */
+    align-items: center;       /* Vertically center */
+    /* height: au;             Full viewport height */
+    width: 100%;              /* Full viewport width */
+  }
+  
+  .inner-notes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .btns{
+    fill: wheat;
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media screen and (max-width:600px) {
+    header{
+      gap: 1em;
+      /* flex-direction: column; */
+      align-items: center;
+    }
+    .search-icon{
+      width: 100%;
+    }
+    header h1{
+    font-family: "McLaren", monospace;
+    line-height: 1em;
+    font-weight: 600;
+    }
+    .text-container{
+      /* margin-top: 2em; */
+      width: 80%;
+      height: 30vh;
+      gap:10px ;
+      padding:1em;
+    font-family: "McLaren", monospace;
+    }
+    .sts{
+      width: 50%;
+    }
+    .st{
+      width: 100%;
+    }
+    .add-button {
+      left: -30%;
+      margin-bottom: 20em;
+    }
+    .note {
+      min-width: 50%;
+
+  
+    }
+  }
+  

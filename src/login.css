@@ -1,0 +1,104 @@
+/* Move this to the top */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* Then other CSS rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+    font-family: 'Poppins', sans-serif;
+}
+.container-two{
+    display: flex;
+    justify-content:space-between;
+    min-height: 100vh;
+    min-width: 100%;
+}
+.container h1{
+    font-size: 3em;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+
+}
+.form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    align-content: flex-start;
+    padding-left: 5em;
+    background: #2d3250;
+}
+.container-two p{
+    color: #e0e0e0ce;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+.inner-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+.input-container {
+    position: relative;
+    display: flex;
+  }
+  .input-container img{
+    margin: 1em;
+  }
+  
+ 
+  svg{
+    fill: hsla(0, 0%, 88%, 0.406);
+    margin-left: 1em;
+  }
+  .termsAndCondition{
+    color: hsla(0, 0%, 88%, 0.26);
+    text-decoration: none;
+
+  }
+  .termsAndCondition:hover{
+    border-bottom: #f9b17a solid 1px;
+
+  }
+  .login-picture{
+    overflow: hidden;
+    height: 100vh;
+
+
+  }
+.Log{
+    width: 40em;
+    height: 100vh;
+        object-fit: cover;
+    /* background-color:whitesmoke; */
+}
+@media screen and (max-width:600px) {
+  .login-picture, .Log{
+    display: none;
+  }
+  
+  .form{
+    width: 100vw;
+    gap: 20px;
+    justify-content:center;
+
+  }
+  .inner-form{
+    gap: 2px;
+  }
+  .container-two{
+    justify-content: center;
+  }
+  .forms-checkbox{
+    padding-bottom: 1em;
+    white-space: nowrap;
+  }
+}

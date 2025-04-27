@@ -1,0 +1,78 @@
+.login{
+    text-decoration: none;
+    color: #e0e0e03e;
+    font-weight: 100;
+    border-bottom: #f9b17a solid 2px;
+    padding-bottom: 0.5em;
+
+}
+
+.signup{
+    text-decoration: none;
+    color: #e0e0e040;
+    font-weight: 100;
+    padding-bottom: 0.5em;
+
+
+}
+.login:hover{
+    color:  #e0e0e0;
+    /* border-bottom: #f9b17a solid 1px; */
+
+}
+.signup:hover{
+    color:  #e0e0e0;
+    border-bottom: #f9b17a solid 1px;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    gap: 20px;
+    left: 5%;
+    position: absolute;
+    top: 0%;
+    max-width: 30vw;
+}
+.input {
+    width: 120%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #f0f0f029;
+    font-size: 16px;
+  }
+  .inputs{
+    width: 48%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #f0f0f029;
+    font-size: 16px;
+  }
+  .input:focus {
+    outline: none;
+    background-color: #e0e0e092;
+    border-left: #f9b17a solid 5px;
+
+  }
+  .username{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputs:focus {
+    outline: none;
+    background-color: #e0e0e092;
+    border-left: #f9b17a solid 5px;
+
+  }
+  @media screen and (max-width:600px) {
+    .input{
+        width: 150%;
+    }
+   nav{
+    max-width: 100vw;
+   }
+  }
